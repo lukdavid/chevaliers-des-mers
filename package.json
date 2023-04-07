@@ -1,5 +1,6 @@
 {
-  "name": "",
+  "name": "chevaliers-des-mers",
+  "description": "An astro website for a scuba diving club",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,14 +8,22 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "npx eslint src/*"
   },
   "dependencies": {
-    "astro": "^2.2.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
     "@astrojs/react": "^2.1.1",
     "@types/react": "^18.0.10",
-    "@types/react-dom": "^18.0.5"
+    "@types/react-dom": "^18.0.5",
+    "astro": "^2.2.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-plugin-astro": "^0.26.1",
+    "eslint-plugin-react": "^7.32.2"
   }
 }

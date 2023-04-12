@@ -6,7 +6,8 @@ import DiveWithUs from "../DiveWithUs";
 
 const Landing = () => {
   return (
-    <div className="bg-[#020024]">
+    <div className="bg-[#020024] ">
+      {/* -mt-16 */}
       <div
         className="h-screen w-screen bg-cover bg-bottom bg-blend-darken"
         style={{ backgroundImage: `url(${boat})` }}

@@ -1,5 +1,6 @@
 ---
 import Landing from "../components/Landing";
+import NavBar from "../components/NavBar";
 ---
 
 <html lang="fr" class="scroll-smooth">
@@ -18,9 +19,13 @@ import Landing from "../components/Landing";
     </style>
   </head>
   <body>
-    <!-- <NavBar /> -->
     <main class="overflow-hidden">
+      <NavBar />
       <Landing />
     </main>
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"
+    ></script>
   </body>
 </html>

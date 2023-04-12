@@ -3,11 +3,11 @@ import { MdScubaDiving, MdPlayArrow } from "react-icons/md";
 import { ANCHORS } from "../utils/anchors";
 
 const Hero = () => (
-  <section className="h-screen">
-    <div className="mx-auto px-4 py-16 text-center lg:px-12 lg:py-24">
+  <section className="h-screen" id={ANCHORS.home}>
+    <div className="mx-auto px-4 py-16 text-center lg:px-12 lg:py-28">
       <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">
         Le Graal est <span className="text-primary-600">sous l&apos;eau</span> à{" "}
-        <span className="text-yellow-500">Marseille 🤿</span>
+        <span className="text-yellow-500">Marseille</span>
       </h1>
       <div className="absolute bottom-0 m-auto">
         <p className="mb-8 text-xl font-medium text-gray-100  sm:px-16 lg:text-3xl xl:px-48">

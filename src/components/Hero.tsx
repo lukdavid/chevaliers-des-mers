@@ -4,16 +4,17 @@ import { ANCHORS } from "../utils/anchors";
 
 const Hero = () => (
   <section className="h-screen">
-    <div className="mx-auto px-4 py-16 text-center lg:px-12 lg:py-32">
-      <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-800 md:text-5xl lg:text-6xl">
-        Le Graal est tombé dans l&apos;eau à Marseille
+    <div className="mx-auto px-4 py-16 text-center lg:px-12 lg:py-24">
+      <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">
+        Le Graal est <span className="text-primary-600">sous l&apos;eau</span> à{" "}
+        <span className="text-yellow-500">Marseille 🤿</span>
       </h1>
       <div className="absolute bottom-0 m-auto">
-        <p className="mb-8 text-xl font-medium text-gray-100  sm:px-16 lg:text-2xl xl:px-48">
+        <p className="mb-8 text-xl font-medium text-gray-100  sm:px-16 lg:text-3xl xl:px-48">
           Les Chevaliers des Mers - Club de plongée associatif à Marseille
         </p>
-        <p className="mb-8 text-lg font-normal text-gray-100  sm:px-16 lg:text-xl xl:px-48">
-          Plogngeurs autonomes et enthousiastes, nous explorons les fonds
+        <p className="mb-8 text-lg font-normal text-gray-100  sm:px-16 lg:text-2xl xl:px-48">
+          Plongeurs autonomes et enthousiastes, nous explorons les fonds
           mediterranéens et à la découverte de leurs trésors. Rejoignez nos
           aventures.
         </p>
@@ -26,7 +27,7 @@ const Hero = () => (
             <MdPlayArrow />
           </a>
           <a
-            href="#"
+            href={`#${ANCHORS.join}`}
             className="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-gray-300 px-5 py-3 text-center text-base font-medium text-gray-800 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 "
           >
             <MdScubaDiving className="mr-2" />

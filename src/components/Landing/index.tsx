@@ -1,11 +1,10 @@
-import { useParallax } from "react-scroll-parallax";
 import boat from "/boat.jpeg";
 import decor1 from "/decor1.png";
 import Hero from "../Hero";
 import About from "../About";
+import DiveWithUs from "../DiveWithUs";
 
 const Landing = () => {
-  const { ref } = useParallax<HTMLImageElement>({ speed: 200 });
   return (
     <div className="bg-[#020024]">
       <div
@@ -15,9 +14,8 @@ const Landing = () => {
         <Hero />
       </div>
       <About />
+      <DiveWithUs />
       <div className="relative h-screen  bg-[#020024]">
-        <h1 className="text-white">Lalala</h1>
-
         <img src={decor1} className="absolute bottom-0 left-0 w-2/5" />
 
         <img

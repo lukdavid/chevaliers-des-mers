@@ -3,7 +3,7 @@ import { ANCHORS } from "../utils/anchors";
 const NavBar = () => (
   <nav className="fixed w-screen  bg-none backdrop-blur-lg drop-shadow-xl z-20 border-b-[1px] border-gray-200 ">
     <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-      <a href={`#${ANCHORS.home}`} className="flex items-center">
+      <a href="#" className="flex items-center">
         <img
           src="https://flowbite.com/docs/images/logo.svg"
           className="mr-3 h-8"

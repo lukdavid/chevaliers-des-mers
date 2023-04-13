@@ -1,0 +1,45 @@
+---
+import { ANCHORS } from "../utils/anchors";
+---
+
+<div
+  class="grid h-screen w-screen grid-flow-row grid-cols-1 md:grid-cols-3 xl:grid-cols-2"
+  id={ANCHORS.about}
+>
+  <div
+    class="px-8 font-normal text-gray-100 md:col-span-2 lg:mt-32 lg:px-16 xl:col-span-1"
+  >
+    <h1
+      class="text-primary-100 mb-4 mt-16 text-2xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-5xl"
+    >
+      Club de plongée associatif à{" "}
+      <span class="text-yellow-400">Marseille</span>
+    </h1>
+    <p class="my-2 lg:text-lg">
+      Les <em>Chevaliers des Mers</em> est une association de plongeurs basée au
+      port de <b class="text-primary-200">Corbières</b> (Estaque). Nous plongeons
+      toute l&apos;année sur les tombants et épaves de la{" "}
+      <b class="text-primary-200">Côte Bleue</b> et du{" "}
+      <b class="text-primary-200">Parc National des Calanques</b>.
+    </p>
+    <p class="my-2 lg:text-lg">
+      Nous sommes principalement un club de plongeurs{" "}
+      <b class="text-primary-200">autonomes</b> et équipés, mais nous organisons
+      ponctuellement des formations lorsqu&apos;un encadrement est disponible.
+    </p>
+    <p class="my-2 lg:text-lg">
+      Une partie des chevaliers pratique également la plongée en{" "}
+      <b class="text-primary-200">circuit fermé</b> (recycleurs ♻️)
+    </p>
+    <img
+      src={"/jellyfish.png"}
+      class="animate-spin-slow opacity-8 m-auto w-1/3 max-w-md py-32"
+    />
+  </div>
+
+  <div class="m-auto">
+    <img src="/turtle.gif" class="m-auto object-cover py-16" />
+
+    <img src="/fish.png" class="w-1/4 skew-y-2 px-4" />
+  </div>
+</div>

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,tsx,astro}"],
+  content: ["./src/**/*.{html,tsx,astro}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       animation: {

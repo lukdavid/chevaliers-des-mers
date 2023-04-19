@@ -1,7 +1,7 @@
 import { ANCHORS } from "../utils/anchors";
 
 const NavBar = () => (
-  <nav className="fixed w-screen  bg-none backdrop-blur-lg drop-shadow-xl z-20 border-b-[1px] border-gray-200 ">
+  <nav className="fixed w-screen  bg-none backdrop-blur-lg drop-shadow-xl z-20 border-b-[1px] border-gray-200 z-40 ">
     <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
       <a href="#" className="flex items-center">
         <img
@@ -32,7 +32,7 @@ const NavBar = () => (
         </svg>
       </button>
       <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul className="mt-4 flex flex-col rounded-lg border max-md:bg-gray-400 border-gray-100  p-4 font-medium dark:border-gray-700 md:mt-0 md:flex-row md:space-x-8 md:border-0  md:p-0 md:dark:bg-gray-900">
+        <ul className="mt-4 flex flex-col rounded-lg border max-md:bg-gray-400 border-gray-100  p-4 font-medium dark:border-gray-700 md:mt-0 md:flex-row md:space-x-8 md:border-0  md:p-0">
           <li>
             <a
               href={`#${ANCHORS.about}`}
@@ -52,7 +52,7 @@ const NavBar = () => (
           </li>
           <li>
             <a
-              href="#"
+              href={`#${ANCHORS.gallery}`}
               className="block rounded py-2 pl-3 pr-4 text-gray-200 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
             >
               Gallerie

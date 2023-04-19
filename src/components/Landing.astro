@@ -3,18 +3,20 @@ import decor1 from "/decor1.png";
 import Hero from "./Hero.astro";
 import About from "./About.astro";
 import DiveWithUs from "./DiveWithUs.astro";
+import Gallery from "./Gallery";
 ---
 
 <div class="bg-[#020024]">
   {/* -mt-16 */}
   <div
-    class="h-screen w-screen bg-cover bg-bottom bg-blend-darken"
+    class="h-screen w-screen bg-cover bg-bottom"
     style={{ backgroundImage: `url(/boat.jpeg)` }}
   >
     <Hero />
   </div>
   <About />
   <DiveWithUs />
+  <Gallery client:load />
   <div class="relative h-screen bg-[#020024]">
     <img src={decor1} class="absolute bottom-0 left-0 w-2/5" />
 

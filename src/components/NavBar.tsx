@@ -1,8 +1,8 @@
 import { ANCHORS } from "../utils/anchors";
 
 const NavBar = () => (
-  <nav className="fixed w-screen  bg-none backdrop-blur-lg drop-shadow-xl z-20 border-b-[1px] border-gray-200 z-40 ">
-    <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+  <nav className="fixed z-40 w-screen border-b-[1px] border-gray-200 bg-[#02002415] bg-none drop-shadow-xl backdrop-blur-lg">
+    <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-8 py-4">
       <a href="#" className="flex items-center">
         <img
           src="https://flowbite.com/docs/images/logo.svg"
@@ -45,7 +45,7 @@ const NavBar = () => (
           <li>
             <a
               href={`#${ANCHORS.join}`}
-              className="block rounded py-2 pl-3 pr-4 text-gray-200 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+              className="block rounded py-2 pl-3 pr-4 text-gray-100 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
             >
               Plonger
             </a>
@@ -53,15 +53,15 @@ const NavBar = () => (
           <li>
             <a
               href={`#${ANCHORS.gallery}`}
-              className="block rounded py-2 pl-3 pr-4 text-gray-200 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+              className="block rounded py-2 pl-3 pr-4 text-gray-100 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
             >
               Gallerie
             </a>
           </li>
           <li>
             <a
-              href="#"
-              className="block rounded py-2 pl-3 pr-4 text-gray-200 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+              href={`#${ANCHORS.contact}`}
+              className="block rounded py-2 pl-3 pr-4 text-gray-100 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
             >
               Contact
             </a>

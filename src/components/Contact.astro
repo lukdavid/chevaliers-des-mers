@@ -1,0 +1,44 @@
+---
+import { ANCHORS } from "../utils/anchors";
+import { Icon } from "astro-icon";
+---
+
+<div
+  class="px-8 font-normal text-gray-100 md:col-span-2 lg:mt-32 lg:px-16 xl:col-span-1"
+  id={ANCHORS.contact}
+>
+  <h1
+    class="text-blue-400 mb-8 mt-16 text-2xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-5xl"
+  >
+    Faites-nous <span class="text-yellow-400">signe 👌</span>
+  </h1>
+
+  <ul class="mb-8 space-y-4 text-left text-primary-100">
+    <li class="flex items-center space-x-3">
+      <!-- Icon -->
+      <Icon name="phone" class="w-6" />
+      <span>Richard (président)</span><a href="tel:+33667441020"
+        >+33 6 67 44 10 20</a
+      >
+    </li>
+    <li class="flex items-center space-x-3">
+      <!-- Icon -->
+      <Icon name="phone" class="w-6" />
+      <span>Naima (communication)</span><a href="tel:+33616620933"
+        >+33 6 16 62 09 33</a
+      >
+    </li>
+    <li class="flex items-center space-x-3">
+      <Icon name="mail" class="w-6" />
+      <a href="mailto:chevaliers.mers@gmail.com">chevaliers.mers@gmail.com</a>
+    </li>
+  </ul>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.827709071793!2d5.29353401299607!3d43.35971437124099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c3ecbf156597%3A0x3bdc9420e3aaecc1!2sLes%20Chevaliers%20Des%20Mers!5e0!3m2!1sfr!2sfr!4v1683146156846!5m2!1sfr!2sfr"
+    class="w-full h-96 rounded-md"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

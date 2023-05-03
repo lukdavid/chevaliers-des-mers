@@ -1,11 +1,12 @@
 ---
 import { ANCHORS } from "../utils/anchors";
+import { Icon } from "astro-icon";
 ---
 
 <section class="h-screen">
-  <div class="mx-auto px-4 py-16 text-center lg:px-12 md:py-32">
+  <div class="mx-auto px-4 py-16 text-center lg:px-12 md:py-40">
     <h1
-      class="mb-4 text-4xl font-bold leading-none tracking-tight text-white md:text-5xl lg:text-6xl"
+      class="mb-4 text-5xl font-bold leading-none tracking-tight text-white md:text-6xl lg:text-6xl max-md:pt-20"
     >
       Le Graal est <span class="text-primary-600 font-extrabold"
         >sous l&apos;eau</span
@@ -32,13 +33,13 @@ import { ANCHORS } from "../utils/anchors";
           href={`#${ANCHORS.about}`}
           class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4"
         >
-          Qui sommes nous <img class="ml-2 w-5" src="/icons/play.svg" />
+          Qui sommes nous
         </a>
         <a
           href={`#${ANCHORS.join}`}
           class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-gray-300 px-5 py-3 text-center text-base font-medium text-gray-800 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100"
         >
-          <img class="mr-2 w-5" src="/icons/scuba.svg" />Plonger avec nous
+          <Icon name="scuba" class="w-6 mr-2" /><span>Plonger avec nous</span>
         </a>
       </div>
     </div>

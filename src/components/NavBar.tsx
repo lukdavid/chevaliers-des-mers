@@ -66,7 +66,7 @@ const NavBar = () => (
               Contact
             </a>
           </li>
-          <li className=" flex items-center gap-4 md:pl-6">
+          <li className=" flex w-24 items-center justify-between pl-3 md:pl-6">
             <a
               href="https://www.instagram.com/chevaliersdesmers/"
               target="_blank"

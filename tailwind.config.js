@@ -5,6 +5,10 @@ export default {
     extend: {
       animation: {
         "spin-slow": "spin 120s linear infinite",
+        float: "float 10s ease-in-out infinite",
+        "custom-bounce": "customBounce 2s ease-in-out infinite",
+
+        swim: "swim 20s ease-in-out infinite",
       },
       colors: {
         primary: {
@@ -58,6 +62,42 @@ export default {
         "Segoe UI Symbol",
         "Noto Color Emoji",
       ],
+    },
+    keyframes: {
+      float: {
+        "0%": {
+          transform: "translatey(0px) rotate(0deg)",
+        },
+        "50%": {
+          transform: "translatey(-30px) rotate(2deg)",
+        },
+
+        "100%": {
+          transform: "translatey(0px) rotate(0deg)",
+        },
+      },
+      customBounce: {
+        "0%, 50%, 100%": {
+          transform: "translateY(0)",
+        },
+        "25%": {
+          transform: "translateY(-5px)",
+        },
+        "75%": {
+          transform: "translateY(-3px)",
+        },
+      },
+      swim: {
+        "0%": {
+          marginLeft: "-235px",
+        },
+        "70%": {
+          marginLeft: "100%",
+        },
+        "100%": {
+          marginLeft: "120%",
+        },
+      },
     },
   },
 

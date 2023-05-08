@@ -8,31 +8,43 @@ import { Icon } from "astro-icon";
   id={ANCHORS.contact}
 >
   <h1
-    class="text-blue-400 mb-8 mt-16 text-2xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-5xl"
+    class="text-blue-300 mb-8 mt-16 text-2xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-5xl"
   >
-    Faites-nous <span class="text-yellow-400">signe 👌</span>
+    Faites-nous <span class="text-yellow-400">un signe 👌</span>
   </h1>
 
-  <ul class="mb-8 space-y-4 text-left text-primary-100">
+  <ul class="mb-8 space-y-4 text-left text-gray-100">
     <li class="flex items-center space-x-3">
-      <!-- Icon -->
       <img
         src="/richard.webp"
-        class="w-12 rounded-full border-surface-blue border-2"
+        class="w-16 rounded-full border-surface-blue border-2"
       />
-      <span>Richard (président)</span><a href="tel:+33667441020"
-        >+33 6 67 44 10 20</a
-      >
+      <div>
+        <p>
+          <span class="font-semibold">Richard</span>
+          <span>&nbsp;(président)</span>
+        </p><p class="flex items-center">
+          <Icon name="phone" class="w-4" /><a href="tel:+33667441020"
+            >+33 6 67 44 10 20</a
+          >
+        </p>
+      </div>
     </li>
     <li class="flex items-center space-x-3">
-      <!-- Icon -->
       <img
         src="/naima.webp"
-        class="w-12 rounded-full border-surface-blue border-2"
+        class="w-16 rounded-full border-surface-blue border-2"
       />
-      <span>Naima (communication)</span><a href="tel:+33616620933"
-        >+33 6 16 62 09 33</a
-      >
+      <div>
+        <p>
+          <span class="font-semibold">Naima</span><span
+            >&nbsp;(communication)</span
+          >
+        </p><p class="flex items-center gap-2 text-gray-200">
+          <Icon name="phone" class="w-4" />
+          <a href="tel:+33616620933">+33 6 16 62 09 33</a>
+        </p>
+      </div>
     </li>
     <li class="flex items-center space-x-3">
       <Icon name="mail" class="w-6" />

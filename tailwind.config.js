@@ -7,8 +7,8 @@ export default {
         "spin-slow": "spin 120s linear infinite",
         float: "float 10s ease-in-out infinite",
         "custom-bounce": "customBounce 2s ease-in-out infinite",
-
         swim: "swim 20s ease-in-out infinite",
+        "swim-reverse": "swimReverse 20s ease-in-out infinite",
       },
       colors: {
         primary: {
@@ -91,11 +91,28 @@ export default {
         "0%": {
           marginLeft: "-235px",
         },
-        "70%": {
-          marginLeft: "100%",
-        },
+
         "100%": {
           marginLeft: "120%",
+        },
+      },
+      swimReverse: {
+        "0%": {
+          marginRight: "-235px",
+        },
+        "70%": {
+          marginRight: "100%",
+        },
+        "100%": {
+          marginRight: "150%",
+        },
+      },
+      spin: {
+        from: {
+          transform: "rotate(0deg)",
+        },
+        to: {
+          transform: "rotate(360deg)",
         },
       },
     },

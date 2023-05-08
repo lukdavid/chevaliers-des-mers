@@ -1,5 +1,5 @@
 import { ANCHORS } from "../utils/anchors";
-
+import { FaInstagram, FaFacebook } from "react-icons/fa/index";
 const NavBar = () => (
   <nav className="fixed z-40 w-screen border-b-[1px] border-gray-200 bg-[#02002415] bg-none drop-shadow-xl backdrop-blur-lg">
     <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-8 py-4">
@@ -32,7 +32,7 @@ const NavBar = () => (
         </svg>
       </button>
       <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul className="mt-4 flex flex-col rounded-lg border max-md:bg-gray-400 border-gray-100  p-4 font-medium dark:border-gray-700 md:mt-0 md:flex-row md:space-x-8 md:border-0  md:p-0">
+        <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 p-4  font-medium dark:border-gray-700 max-md:bg-gray-400 md:mt-0 md:flex-row md:space-x-8 md:border-0  md:p-0">
           <li>
             <a
               href={`#${ANCHORS.about}`}
@@ -64,6 +64,22 @@ const NavBar = () => (
               className="block rounded py-2 pl-3 pr-4 text-gray-100 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
             >
               Contact
+            </a>
+          </li>
+          <li className=" flex items-center gap-4 md:pl-6">
+            <a
+              href="https://www.instagram.com/chevaliersdesmers/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram size="1.5em" className="text-white" />
+            </a>
+            <a
+              href="https://www.facebook.com/people/Chevaliers-des-Mers/100092363448201/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaFacebook size="1.5em" className="text-white" />
             </a>
           </li>
         </ul>

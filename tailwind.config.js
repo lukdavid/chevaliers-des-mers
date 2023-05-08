@@ -19,6 +19,8 @@ export default {
           800: "#1e40af",
           900: "#1e3a8a",
         },
+        "surface-blue": "#004a9a",
+        "abyss-blue": "#020024",
       },
     },
     fontFamily: {

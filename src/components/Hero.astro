@@ -3,45 +3,35 @@ import { ANCHORS } from "../utils/anchors";
 import { Icon } from "astro-icon";
 ---
 
-<section class="h-screen">
-  <div class="mx-auto px-4 py-16 text-center lg:px-12 md:py-40">
-    <h1
-      class="mb-4 text-5xl font-bold leading-none tracking-tight text-white md:text-6xl lg:text-6xl max-md:pt-20"
-    >
-      Le Graal est <span class="text-primary-600 font-extrabold"
-        >sous l&apos;eau</span
-      > à{" "}
-      <span class="text-yellow-500 font-extrabold">Marseille</span>
-    </h1>
-    <div class="absolute bottom-0 m-auto">
-      <p
-        class="mb-8 text-xl font-medium text-gray-100 sm:px-16 lg:text-3xl xl:px-48"
+<section class="h-screen bg-[url(/boat.jpeg)] bg-cover relative">
+  <div class="mx-auto py-16 text-center md:py-40">
+    <div class="px-4 lg:px-12">
+      <h1
+        class="mb-4 text-5xl font-bold leading-none tracking-tight text-white md:text-6xl lg:text-6xl max-md:pt-20"
       >
-        Les Chevaliers des Mers - Club de plongée associatif à Marseille
-      </p>
-      <p
-        class="mb-8 text-lg font-normal text-gray-100 sm:px-16 lg:text-2xl xl:px-48"
-      >
-        Plongeurs autonomes et enthousiastes, nous explorons les fonds
-        mediterranéens à la découverte de leurs trésors. Rejoignez nos
-        aventures.
-      </p>
-      <div
-        class="mb-8 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0 lg:mb-16"
-      >
-        <a
-          href={`#${ANCHORS.about}`}
-          class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4"
+        Le Graal est <span class="text-primary-600 font-extrabold"
+          >sous l&apos;eau</span
+        > à{" "}
+        <span class="text-yellow-500 font-extrabold">Marseille</span>
+      </h1>
+      <div class="absolute bottom-0 m-auto w-screen z-20">
+        <p
+          class="mb-8 text-xl font-medium text-gray-100 sm:px-16 md:text-2xl lg:text-4xl xl:px-48"
         >
-          Qui sommes nous
-        </a>
-        <a
-          href={`#${ANCHORS.join}`}
-          class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-gray-300 px-5 py-3 text-center text-base font-medium text-gray-800 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100"
+          Les Chevaliers des Mers - Club de plongée associatif à Marseille
+        </p>
+        <p
+          class="mb-8 text-lg font-normal text-gray-100 sm:px-16 md:text-xl lg:text-3xl xl:px-48 max-w-5xl lg:max-w-6xl mx-auto"
         >
-          <Icon name="scuba" class="w-6 mr-2" /><span>Plonger avec nous</span>
-        </a>
+          Plongeurs autonomes et enthousiastes, nous explorons les fonds
+          mediterranéens à la découverte de leurs trésors. Rejoignez nos
+          aventures.
+        </p>
       </div>
+    </div>
+    <div
+      class="w-screen h-1/6 absolute bottom-0 bg-gradient-to-b from-transparent to-surface-blue"
+    >
     </div>
   </div>
 </section>

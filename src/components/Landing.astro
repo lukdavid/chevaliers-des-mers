@@ -7,25 +7,20 @@ import Gallery from "./Gallery";
 import Contact from "./Contact.astro";
 ---
 
-<div class="bg-[#020024]">
-  {/* -mt-16 */}
-  <div
-    class="h-screen w-screen bg-cover bg-bottom"
-    style={{ backgroundImage: `url(/boat.jpeg)` }}
-  >
-    <Hero />
-  </div>
-  <About />
-  <DiveWithUs />
-  <Gallery client:load />
-  <Contact />
-  <div class="relative h-screen bg-[#020024]">
-    <img src={decor1} class="absolute bottom-0 left-0 w-2/5" />
-
-    <img
-      src={decor1}
-      class="absolute bottom-0 right-0 w-2/5"
-      style={{ transform: "rotateY(180deg)" }}
-    />
+<div class="bg-surface-blue">
+  <Hero />
+  <div class="bg-gradient-to-b from-surface-blue to-abyss-blue">
+    <About />
+    <DiveWithUs />
+    <Gallery client:load />
+    <Contact />
+    <div class="relative h-screen">
+      <img src={decor1} class="absolute bottom-0 left-0 w-2/5" />
+      <img
+        src={decor1}
+        class="absolute bottom-0 right-0 w-2/5"
+        style={{ transform: "rotateY(180deg)" }}
+      />
+    </div>
   </div>
 </div>

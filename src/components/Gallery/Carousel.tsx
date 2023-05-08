@@ -12,7 +12,7 @@ const Carousel: FC<CarouselProps> = ({ images }) => (
     data-carousel="static"
   >
     {/* // Carousel wrapper --> */}
-    <div className="relative h-56 overflow-hidden rounded-lg md:h-[500px]">
+    <div className="relative h-[400px] overflow-hidden rounded-lg md:h-[560px]">
       {images.map((image, index) => (
         <CarouselImage key={`carousel-image-${index}`} {...image} />
       ))}

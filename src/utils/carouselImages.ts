@@ -31,4 +31,24 @@ export const CAROUSEL_IMAGES = [
     src: "https://chevaliers-des-mers-gallery.s3.fr-par.scw.cloud/gallery/DSCF3656_resized.jpg",
     alt: "Corail",
   },
+  {
+    src: "https://chevaliers-des-mers-gallery.s3.fr-par.scw.cloud/gallery/galaad.webp",
+    alt: "Galaad",
+  },
+  {
+    src: "https://chevaliers-des-mers-gallery.s3.fr-par.scw.cloud/gallery/imperial.webp",
+    alt: "Impérial",
+  },
+  {
+    src: "https://chevaliers-des-mers-gallery.s3.fr-par.scw.cloud/gallery/palier.webp",
+    alt: "palier",
+  },
+  {
+    src: "https://chevaliers-des-mers-gallery.s3.fr-par.scw.cloud/gallery/fifou.webp",
+    alt: "fifou",
+  },
+  {
+    src: "https://chevaliers-des-mers-gallery.s3.fr-par.scw.cloud/gallery/epave.webp",
+    alt: "epave",
+  },
 ];

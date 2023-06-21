@@ -1,5 +1,36 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import { ANCHORS } from "../utils/anchors";
-import { FaInstagram, FaFacebook } from "react-icons/fa/index";
+import { Fragment } from "react";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaCalendarDay,
+  FaCloudSun,
+} from "react-icons/fa/index";
+
+const LINKS = [
+  {
+    url: "https://www.team-planning.com/?url=Q0sxNTY5MDg2OTM4MTU2OTY4ODg5OTczNjgkMnkkMTAkM0hQYnE3eGdKUFdmcndFYS8vQjJ4T3ZyS3dpYmFPbFQwdG9ISVpYS3RWU1hqaldIdTE3bi4%3D",
+    icon: <FaCalendarDay size="1.5em" className="text-white" />,
+    title: "Team Planning",
+  },
+  {
+    url: "https://marine.meteoconsult.fr/meteo-marine/bulletin-detaille/port-78/previsions-meteo-l-estaque-aujourdhui",
+    icon: <FaCloudSun size="1.5em" className="text-white" />,
+    title: "Météo",
+  },
+  {
+    url: "https://www.instagram.com/chevaliersdesmers/",
+    icon: <FaInstagram size="1.5em" className="text-white" />,
+    title: "Instagram",
+  },
+  {
+    url: "https://www.facebook.com/people/Chevaliers-des-Mers/100092363448201/",
+    icon: <FaFacebook size="1.5em" className="text-white" />,
+    title: "Facebook",
+  },
+];
+
 const NavBar = () => (
   <nav className="fixed z-40 w-screen border-b-[1px] border-gray-200 bg-[#02002415] bg-none drop-shadow-xl backdrop-blur-lg">
     <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-8 py-2 md:py-4">
@@ -66,21 +97,29 @@ const NavBar = () => (
               Contact
             </a>
           </li>
-          <li className=" flex w-24 items-center justify-between pl-3 md:pl-6">
-            <a
-              href="https://www.instagram.com/chevaliersdesmers/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaInstagram size="1.5em" className="text-white" />
-            </a>
-            <a
-              href="https://www.facebook.com/people/Chevaliers-des-Mers/100092363448201/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaFacebook size="1.5em" className="text-white" />
-            </a>
+          <li className=" flex w-48 items-center justify-between pl-3 md:pl-6">
+            {LINKS.map(({ url, icon, title }, index) => (
+              <Fragment key={title}>
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Planning"
+                  data-tooltip-target={`tooltip-bottom-${index + 1}`}
+                  data-tooltip-placement="bottom"
+                >
+                  {icon}
+                </a>
+                <div
+                  id={`tooltip-bottom-${index + 1}`}
+                  role="tooltip"
+                  className="tooltip invisible absolute z-10 inline-block  rounded-lg border border-gray-200 bg-white px-3 py-2 font-medium text-gray-900 opacity-0 shadow-sm"
+                >
+                  {title}
+                  <div className="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </Fragment>
+            ))}
           </li>
         </ul>
       </div>

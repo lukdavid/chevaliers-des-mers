@@ -10,10 +10,14 @@ import Contact from "./Contact.astro";
 <div class="bg-surface-blue">
   <Hero />
   <div class="bg-gradient-to-b from-surface-blue to-abyss-blue">
-    <About />
-    <DiveWithUs />
-    <Gallery client:load />
-    <Contact />
+    <div class="flex justify-center">
+      <div class="max-w-screen-2xl">
+        <About />
+        <DiveWithUs />
+        <Gallery client:load />
+        <Contact />
+      </div>
+    </div>
     <div
       class="relative h-screen w-screen bg-[url('/bottom-cutout.png')] bg-contain bg-no-repeat bg-bottom flex justify-center"
     >

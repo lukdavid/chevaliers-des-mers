@@ -9,7 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "npx eslint src/*"
+    "lint": "npx eslint src/*",
+    "uploadImages": "npx ts-node --esm scripts/uploadImages.ts"
   },
   "dependencies": {
     "@astrojs/tailwind": "^3.1.1",
@@ -22,11 +23,13 @@
   },
   "devDependencies": {
     "@astrojs/react": "^2.1.1",
+    "@aws-sdk/client-s3": "^3.342.0",
     "@types/react": "^18.0.10",
     "@types/react-dom": "^18.0.5",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "astro": "^2.2.0",
+    "dotenv": "^16.1.3",
     "eslint": "^8.37.0",
     "eslint-plugin-astro": "^0.26.1",
     "eslint-plugin-react": "^7.32.2",
